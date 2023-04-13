@@ -30,4 +30,8 @@ Alguns arquivos de exercicios e teoria de microprocessadores
       
 ###Flags
 
-      | Estado | Simbolo 1 | Simbolo 0 | |----------|:-------------:|------:| | CF (carry)| CY | NO |
+     
+   | Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
