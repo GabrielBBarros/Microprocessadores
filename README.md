@@ -8,7 +8,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 ### Principais comandos
    
 | Comando | Função | 
-| --- | --- | --- |
+| --- | --- |
 | r | Mostra registradores | 
 | q | Sai do Debug |
 | a | Começa linha |
