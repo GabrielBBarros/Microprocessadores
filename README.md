@@ -147,9 +147,10 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    
    Para movimentar uma string podemos entre outros registradores especiais, seja o byte (B) ou a word (W), essa movimentação ocorre de [DS:SI] -> [ES:DI], porem lembre-se que é uma cópia, além que dependendo para paridade pode ser decrementado ou incrementado. Exemplo:
             
-         MOVSB
-         MOVSW
+       MOVSB
+       MOVSW
    
+   Para carregar uma string usamos a função LODS, sendo para byte utilizamos o sulfixo 'B' e para uma word o sulfico 'W', como fizemos no MOVS, o nosso "carregamento" 
           
    
    
