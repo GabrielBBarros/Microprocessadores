@@ -30,4 +30,4 @@ Alguns arquivos de exercicios e teoria de microprocessadores
       
 ###Flags
 
-| Estado | Simbolo 1 | Simbolo 0 | |----------|:-------------:|------:| | CF (carry)| CY | NO |
+      | Estado | Simbolo 1 | Simbolo 0 | |----------|:-------------:|------:| | CF (carry)| CY | NO |
