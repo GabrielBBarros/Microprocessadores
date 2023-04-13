@@ -83,8 +83,8 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | MOV | Copia valores | MOV AX, 56|
 | ADD | Faz adição sem o carry | ADD AX, 45|
 | ADC | Faz adição com carry| ADC AX, 89|
-| INC |  Incrementa| INC AX|
-| DEC |  Decrementa| DEC AX|
+| INC |  Incrementa (Não afeta o carry)| INC AX|
+| DEC |  Decrementa (Não afeta o carry)| DEC AX|
 | SUB |  Subtrai valores utilizar sem carry| SUB AX, 2|
 | SBB |  Subtrai valores utilizando carry| SBB AX, 3|
 | MUL |  Multiplica valores, se for um byte(tipo AL) o resultado fica em AX, se for uma word o resultado fica em DX (parte maior) e AX (parte menor)| MUL CX|
@@ -141,3 +141,14 @@ Alguns arquivos de exercicios e teoria de microprocessadores
   
       Exemplo: 36 (Hexadecimal) -> 0011 0110 (Binário)-> 1100 1001 -> 1100 1010 -> CA (Hexadecimal)
 
+### String
+
+   Uma String corresponde a um elemento de apartir de 8 sté 16 bits, é possível fazer diversas operações.
+   
+   Para movimentar uma string podemos entre outros registradores especiais, seja o byte (B) ou a word (W), essa movimentação ocorre de [DS:SI] -> [ES:DI], porem lembre-se que é uma cópia, além que dependendo para paridade pode ser decrementado ou incrementado. Exemplo:
+         MOVSB
+         MOVSW
+   
+          
+   
+   
