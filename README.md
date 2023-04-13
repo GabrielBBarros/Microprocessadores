@@ -58,7 +58,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 ### Flags
 
      
-   | Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
+| Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
 | --- | --- | --- |
 | Carry (CF) | CY (Ativo) | NC (Não ativo)|
 | Paridade (PF) | PE (Par) | PO (Impar) |
@@ -71,6 +71,11 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 ### Operações
 
-| Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
+| Função | Descrição | Exemplo |
 | --- | --- | --- |
-| Carry (CF) | CY (Ativo) | NC (Não ativo)|
+|  |  | |
+|  |  | |
+|  |  | |
+|  |  | |
+|  |  | |
+
