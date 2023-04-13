@@ -73,14 +73,15 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 | Função | Descrição | Exemplo |
 | --- | --- | --- |
-| ADD |  | |
-| ADC |  | |
-| INC |  | |
-| DEC |  | |
-| SUB |  | |
-| SBB |  | |
-| MUL |  | |
-| DIV |  | |
+| MOV | Copia valores | MOV AX, 56|
+| ADD | Faz adição sem o carry | ADD AX, 45|
+| ADC | Faz adição com carry| ADC AX, 89|
+| INC |  Incrementa| INC AX|
+| DEC |  Decrementa| DEC AX|
+| SUB |  Subtrai valores utilizar sem carry| SUB AX, 2|
+| SBB |  Subtrai valores utilizando carry| SBB AX, 3|
+| MUL |  Multiplica valores, se for um byte(tipo AL) o resultado fica em AX, se for uma word o resultado fica em DX (parte maior) e AX (parte menor)| MUL CX|
+| DIV |  Divide os valores, se for um byte(tipo AL) o resultado fica em AL e resto em AH, se for uma word o resultado fica em DX (parte maior) e AX (parte menor)| DIV CX|
 | RCL |  | |
 | RCR |  | |
 | ROL |  | |
