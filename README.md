@@ -73,9 +73,25 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 | Função | Descrição | Exemplo |
 | --- | --- | --- |
-|  |  | |
-|  |  | |
-|  |  | |
-|  |  | |
-|  |  | |
+| ADD |  | |
+| ADC |  | |
+| INC |  | |
+| DEC |  | |
+| SUB |  | |
+| SBB |  | |
+| MUL |  | |
+| DIV |  | |
+| RCL |  | |
+| RCR |  | |
+| ROL |  | |
+| ROR |  | |
+| SHL |  | |
+| AND |  | |
+| OR |  | |
+| NOT |  | |
+| XOR |  | |
+| PUSH |  | |
+| POP |  | |
+
+
 
