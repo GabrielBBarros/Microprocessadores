@@ -3,7 +3,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 # Teoria
 
-##Entendimento básico e operações
+## Entendimento básico e operações
 
 ### Processadores e plataforma
 
