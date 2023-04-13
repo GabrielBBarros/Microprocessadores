@@ -133,6 +133,11 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    Endereçamento por deslocamento
    
       MOV AX, DS:[1000]
-      
-    
+  
+  
+### Complemento de 2
+
+  Para achar o complemento de 2 de um número obte-lo, converter para binário, fazer a operação NOT (inverter números) e somar mais 1. se o último valor for 0 ele é positivo, caso o contrário ele é negativo.
+  
+      Exemplo: 36 (Hexadecimal) -> 0011 0110 (Binário)-> 1100 1001 -> 1100 1010 -> CA (Hexadecimal)
 
