@@ -36,7 +36,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 ###Flags
 
      
-   | Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+   | Command | Description | Description |
+| --- | --- || --- |
+| git status | List all new or modified files |List all new or modified files |
+| git diff | Show file differences that haven't been staged |List all new or modified files |
