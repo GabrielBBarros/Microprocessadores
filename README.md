@@ -69,3 +69,8 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | Direção (DF) | DN (para baixo) | UP (Para cima) |
 | Interrupções (IF) | EI (Permitido) | DI (Não permitido) |
 
+### Operações
+
+      | Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
+| --- | --- | --- |
+| Carry (CF) | CY (Ativo) | NC (Não ativo)|
