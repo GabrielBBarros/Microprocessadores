@@ -146,6 +146,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    Uma String corresponde a um elemento de apartir de 8 sté 16 bits, é possível fazer diversas operações.
    
    Para movimentar uma string podemos entre outros registradores especiais, seja o byte (B) ou a word (W), essa movimentação ocorre de [DS:SI] -> [ES:DI], porem lembre-se que é uma cópia, além que dependendo para paridade pode ser decrementado ou incrementado. Exemplo:
+            
          MOVSB
          MOVSW
    
