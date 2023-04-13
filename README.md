@@ -10,6 +10,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
    Nesa parte trabalharemos com processadores da Intel 8088 e 8086, a grande diferença de um e outro se encontra no seu barramente (onde se manioula os dados), onde o 8088 possui apenas dois barramentos de 8 bits e o 8086 possui um de 16 bits, nesse caso o 8086 precisa apenas de uma operação para manipular dados de 16 bits, enquanto o 8088 precisa de duas. Aqui utilizaremos a plataforma DosBox para fazer os nossos códigos.
    
+   
 ### Principais comandos
    
 | Comando | Função | 
@@ -25,6 +26,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | g | Vários Ts | 
 | int 20 | Interrompe programa | 
 
+
 ### Como começo
    
    Para facilitar escreve apenas assim nos primeiros comando do debug
@@ -35,6 +37,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 ### Registradores Gerais
 
    Aqui possuimos 4 registrsadores, sendo eles AX,BX,CX ou DX (podemos escrever em minusculo também). É importante ressaltar dias coisas importantes, a primeira delas é que cada registrador possui uma parte alta (H) e uma parte baixa (L) armazenando menos capacidade que um inteiro, o outro ponto se diz respeito ao seu uso, cada um tem um uso especifico, em caso de armazenamento e lugares errados isso pode acarretar em perca de dados.
+   
    
 ## Registradores de ponteiro e indice
 
@@ -54,9 +57,9 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    O calculo para fazer essa operação é (os números estão em hexadecimal): 
    
       CS*10+IP
-      
+   
+   
 ### Flags
-
      
 | Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
 | --- | --- | --- |
@@ -68,6 +71,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | Overflow (OF)| OV (Overflow) | NV (Sem overflow) |
 | Direção (DF) | DN (para baixo) | UP (Para cima) |
 | Interrupções (IF) | EI (Permitido) | DI (Não permitido) |
+
 
 ### Operações
 
@@ -93,6 +97,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | XOR |  Faz a operação de XOR (Se valore iguais o resultado é '0', valores diferente o resultado dá '1')| XOR AX,1|
 | PUSH | Faz a operação de push na pilha, ou seja uma inserção | PUSH AX|
 | POP |  az a operação de pop na pilha, ou seja uma remoção no final| POP AX|
+
 
 ### Endereçamento
 
