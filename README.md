@@ -5,8 +5,23 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 ## Entendimento básico e operações
 
-### Processadores e plataforma
+### Principais comandos
+   
+| Comando | Função | 
+| --- | --- | --- |
+| r | Mostra registradores | 
+| q | Sai do Debug |
+| a | Começa linha |
+| u | Vizualiza programa |
+| t | Prosegue execução linha alinha | 
+| n| Nomeia programa | 
+| w | Escreve | 
+| e | Edita | 
+| g | Vários Ts | 
+| int 20 | Interrompe programa | 
 
+
+### Processadores e plataforma
 
    Nesa parte trabalharemos com processadores da Intel 8088 e 8086, a grande diferença de um e outro se encontra no seu barramente (onde se manioula os dados), onde o 8088 possui apenas dois barramentos de 8 bits e o 8086 possui um de 16 bits, nesse caso o 8086 precisa apenas de uma operação para manipular dados de 16 bits, enquanto o 8088 precisa de duas. Aqui utilizaremos a plataforma DosBox para fazer os nossos códigos
 
