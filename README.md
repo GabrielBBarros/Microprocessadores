@@ -38,8 +38,8 @@ Alguns arquivos de exercicios e teoria de microprocessadores
      
    | Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
 | --- | --- | --- |
-| Carry (CF) | CY | NC |
-| Paridade (PF) | PE(Par) | PO(Impar) |
+| Carry (CF) | CY (Ativo) | NC (Não ativo)|
+| Paridade (PF) | PE (Par) | PO (Impar) |
 | Carry Auxiliar (AF) | AC (Carry auxiliar) | NC (Sem carry auxiliar) |
 | Zero (ZF) | ZR (Zero) | NZ (Não zero) |
 | Sinal (SF) | NG (Negativo) | NC (Positivo) |
