@@ -24,4 +24,6 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    
  ### Endereço de Memória (HEXADECIMAL)
     
-    O calculo para fazer essa operação é: CS*10+IP
+   O calculo para fazer essa operação é: 
+   
+      CS*10+IP
