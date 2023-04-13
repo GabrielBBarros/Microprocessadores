@@ -1,3 +1,10 @@
+Faça um programa que multiplica um valor de
+16 bits, guardado na posição 200 do segmento de memória
+A000 pelo valor de 16 bits, guardado na posição 202 do mesmo
+segmento de memória. O resultado (32 bits) deve ser colocado
+no endereço de memória 204.
+
+
 mov ax, a000
 mov ds, ax
 mov word ptr[200], 1234
