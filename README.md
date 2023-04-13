@@ -71,6 +71,6 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 ### Operações
 
-      | Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
+| Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
 | --- | --- | --- |
 | Carry (CF) | CY (Ativo) | NC (Não ativo)|
