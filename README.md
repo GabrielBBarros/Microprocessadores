@@ -1,7 +1,9 @@
 # Microprocessadores
 Alguns arquivos de exercicios e teoria de microprocessadores
 
+
 # Teoria
+
 
 ## Entendimento básico e operações
 
@@ -33,6 +35,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
         
       debug
       a 100
+
 
 ### Registradores Gerais
 
