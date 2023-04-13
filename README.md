@@ -33,10 +33,17 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    
       CS*10+IP
       
-###Flags
+### Flags
 
      
-   | Command | Description | Description |
+   | Estado | Simbolo 1 (Ativo) | Simbolo 0 (Não ativo) |
 | --- | --- | --- |
-| git status | List all new or modified files | 
-| git diff | Show file differences that haven't been staged | List all new or modified files |
+| Carry (CF) | CY | NC |
+| Paridade (PF) | PE(Par) | PO(Impar) |
+| Carry Auxiliar (AF) | AC (Carry auxiliar) | NC (Sem carry auxiliar) |
+| Zero (ZF) | ZR (Zero) | NZ (Não zero) |
+| Sinal (SF) | NG (Negativo) | NC (Positivo) |
+| Overflow (OF)| OV (Overflow) | NV (Sem overflow) |
+| Direção (DF) | DN (para baixo) | UP (Para cima) |
+| Interrupções (IF) | EI (Permitido) | DI (Não permitido) |
+
