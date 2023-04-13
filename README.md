@@ -94,5 +94,37 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | PUSH | Faz a operação de push na pilha, ou seja uma inserção | PUSH AX|
 | POP |  az a operação de pop na pilha, ou seja uma remoção no final| POP AX|
 
+### Endereçamento
 
+   Existe alguns jeitos de endereçamento em Assembly utilizando o DosBox, aqui vai alguns deles:
+   
+   Endereçamento de valor (imediato)
+   
+      MOV AX, 100
+      
+   Endereçamento direto na linha de memória
+   
+      MOV AX, [104]
+      
+   Endereçamento entre registros gerais
+   
+      MOV AX, BX
+      
+   Endereçamento para outros registros
+   
+      MOV AX, [ES]
+      
+   Endereçamento de dois outros tipos de registros
+   
+      MOV AX, [BX][SI]
+      
+   Endereçamento indexado
+   
+      MOV AX,[BX+0001]
+      
+   Endereçamento por deslocamento
+   
+      MOV AX, DS:[1000]
+      
+    
 
