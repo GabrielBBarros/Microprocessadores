@@ -5,21 +5,6 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 ## Entendimento básico e operações
 
-### Principais comandos
-   
-| Comando | Função | 
-| --- | --- |
-| r | Mostra registradores | 
-| q | Sai do Debug |
-| a | Começa linha |
-| u | Vizualiza programa |
-| t | Prosegue execução linha alinha | 
-| n| Nomeia programa | 
-| w | Escreve | 
-| e | Edita | 
-| g | Vários Ts | 
-| int 20 | Interrompe programa | 
-
 
 ### Processadores e plataforma
 
@@ -44,8 +29,8 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    
    Para facilitar escreve apenas assim nos primeiros comando do debug
         
-        debug
-         a 100
+      debug
+      a 100
 
 ### Registradores Gerais
 
