@@ -17,10 +17,15 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 ## Registradores de ponteiro e indice
 
    SP e BP: Segmento de pilha (PUSH e POP);
+   
    SI e DI: Segmento de dados;
+   
    SS: Segmento de pilha;
+   
    CS: Segmento de codigo;
+   
    DS e ES: Segmento de dados e segmento extra de dados.
+   
    
  ### Endereço de Memória (HEXADECIMAL)
     
