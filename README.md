@@ -29,7 +29,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | int 20 | Interrompe programa | 
 
 
-### Como começo
+### Como começo?
    
    Para facilitar escreve apenas assim nos primeiros comando do debug
         
