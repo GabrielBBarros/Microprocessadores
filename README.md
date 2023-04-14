@@ -176,6 +176,8 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | Função | Descrição | Exemplo |
 | --- | --- | --- |
 | REP | Faz o comando de repetição de string longs, enquanto cx != 0 | REP MOVSW |
+| REPE e REPZ | Além de fazer o que o REP faz ele vê se o Carry e o Overflow recebem 0 para encerrar, através das operções SCAS (Compara AX ou AL com o que está em ES:DI) oi CMPS (compara strings através de char, alterandos as flags) | REP MOVSW |
+| REPNE e REPNZ |  | REP MOVSW |
 | JZ | É um comando de jump relativo onde só irá fazer o laço se for resultado for 0 | JZ 100 |
 | JNZ | É um comando de jump relativo onde só irá fazer o laço se for resultado for  diferente de 0 | JNZ 100 |
 | JC | É um comando que só irá saltar se o houver carry | JC 100 |
@@ -185,7 +187,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 ### Sub-Rotina
 
-   Uma sub rotina seria como a chamada de uma função, para acessar ela utilizamos o comando CALL (além disso o Call guarda a instrução seguinte na pilha, para mais tarde), e para voltarmos da função usamos o comando RET na subrotina (volatando imediatamente onde aquela instrução subsequente de Call foi guardada). E por último nesse tópico há duas instruçlões interessantes que são a LOOP, que faz um laço utilizando CALL decrementando CX e o XCHG, que troca os valores de dois registradores.
+   Uma sub rotina seria como a chamada de uma função, para acessar ela utilizamos o comando CALL (além disso o Call guarda a instrução seguinte na pilha, para mais tarde), e para voltarmos da função usamos o comando RET na subrotina (volatando imediatamente onde aquela instrução subsequente de Call foi guardada). Além desses há duas instruçlões interessantes que são a LOOP, que faz um laço utilizando CALL decrementando CX e o XCHG, que troca os valores de dois registradores.
    
     102  CALL 0150
     LOOP 102
@@ -196,6 +198,20 @@ Alguns arquivos de exercicios e teoria de microprocessadores
     RET
     XCHG AX, BX
 
-          
+    
+    Vale lembrar que o LOOP possui masi duas ramificações o LOOPE/LOOPZ que faz a mesma coisa que o LOOP normal porém vendo se há resultado 0 e CX igual a 0 para parar. Além desse existe o LOOPNE e o LOOPNZ que faz a mesma coisa que o LOOPE porém se houver não houver zero ele para.
+    
+    LOOPE 120
+    LOOPNE 150
+    
+    CMPSW
+    
+    Os comandos CMPS (B/W) servem para comparar strings char a char e altera a sua flag, decrementando SI e DI, caso ocorrer sucesso na comparação (se realmente forem iguais) retornará flag de zero igual a 1 e o flag de carry igual a 0.
+    
+     SCASB
+    
+    Já o comando SCAS (B/W) compara o valor setado em AX ou AL com o endereço ES:DI, subtraindo AX com o valor indicado nesse endereço de memória e fazendo a operação +/-2 em DI, caso haja sucesso na comparação o valor da flag zero será 1, ou seja, há zero.
+    
+      
    
    
