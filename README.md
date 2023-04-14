@@ -147,6 +147,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
    Uma dúvida frequente é a diferença se após uma operação o valor gerado virá com carry ou overflow caso houver algum tipo de estouro, ou algo do gênero. 
    O overflow ocorre quando há uma quebra do valor por ser um valor maior que o esperado no registrador, essa sinalização pode ser vista quando em 8 bits sem ser sinalizada o valor passar entre 0 a 255, e em 16 bits de 0 a 65535, além disso podemos ver isso em complemento de 2, como mencionado no tópico acima. 
+   
    Para sabermos se há overflow usamos dois flags: CF e OF. Para sabermos se houve carry é fácil, basta ver se ultrapassa o limite não sinalizado, já para ver se houve houverflow é necessário converter o resultado da soma em binário para o decimal de complemento de 2, assim se ultrapassar da faixa, isso quer dizer que houve overflow.
 
 ### String
