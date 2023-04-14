@@ -141,6 +141,14 @@ Alguns arquivos de exercicios e teoria de microprocessadores
   
       Exemplo: 36 (Hexadecimal) -> 0011 0110 (Binário)-> 1100 1001 -> 1100 1010 -> CA (Hexadecimal)
 
+'Há uma notação importante para se lembrar para se usar mais tarde, para 8 bits os valores de complemento de 2 serão entre -128 até 127 e para 32 bits de -32768 até 32767'
+
+## Overflow vs Carry
+
+   Uma dúvida frequente é a diferença se após uma operação o valor gerado virá com carry ou overflow caso houver algum tipo de estouro, ou algo do gênero. 
+   O overflow ocorre quando há uma quebra do valor por ser um valor maior que o esperado no registrador, essa sinalização pode ser vista quando em 8 bits sem ser sinalizada o valor passar entre 0 a 255, e em 16 bits de 0 a 65535, além disso podemos ver isso em complemento de 2, como mencionado no tópico acima. 
+   Para sabermos se há overflow usamos dois flags: CF e OF. Para sabermos se houve carry é fácil, basta ver se ultrapassa o limite não sinalizado, já para ver se houve houverflow é necessário converter o resultado da soma em binário para o decimal de complemento de 2, assim se ultrapassar da faixa, isso quer dizer que houve overflow.
+
 ### String
 
    Uma String corresponde a um elemento de apartir de 8 sté 16 bits, é possível fazer diversas operações.
