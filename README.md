@@ -204,7 +204,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
     LOOPE 120
     LOOPNE 150
     
-   CMPSW
+   CMPS
     
    Os comandos CMPS (B/W) servem para comparar strings char a char e altera a sua flag, decrementando SI e DI, caso ocorrer sucesso na comparação (se realmente forem iguais) retornará flag de zero igual a 1 e o flag de carry igual a 0.
    
