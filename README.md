@@ -199,18 +199,22 @@ Alguns arquivos de exercicios e teoria de microprocessadores
     XCHG AX, BX
 
     
-    Vale lembrar que o LOOP possui masi duas ramificações o LOOPE/LOOPZ que faz a mesma coisa que o LOOP normal porém vendo se há resultado 0 e CX igual a 0 para parar. Além desse existe o LOOPNE e o LOOPNZ que faz a mesma coisa que o LOOPE porém se houver não houver zero ele para.
+   Vale lembrar que o LOOP possui masi duas ramificações o LOOPE/LOOPZ que faz a mesma coisa que o LOOP normal porém vendo se há resultado 0 e CX igual a 0 para parar. Além desse existe o LOOPNE e o LOOPNZ que faz a mesma coisa que o LOOPE porém se houver não houver zero ele para.
     
     LOOPE 120
     LOOPNE 150
     
-    CMPSW
+   CMPSW
     
-    Os comandos CMPS (B/W) servem para comparar strings char a char e altera a sua flag, decrementando SI e DI, caso ocorrer sucesso na comparação (se realmente forem iguais) retornará flag de zero igual a 1 e o flag de carry igual a 0.
+   Os comandos CMPS (B/W) servem para comparar strings char a char e altera a sua flag, decrementando SI e DI, caso ocorrer sucesso na comparação (se realmente forem iguais) retornará flag de zero igual a 1 e o flag de carry igual a 0.
+   
+      CMPSW
     
-     SCASB
+   SCASB
     
-    Já o comando SCAS (B/W) compara o valor setado em AX ou AL com o endereço ES:DI, subtraindo AX com o valor indicado nesse endereço de memória e fazendo a operação +/-2 em DI, caso haja sucesso na comparação o valor da flag zero será 1, ou seja, há zero.
+   Já o comando SCAS (B/W) compara o valor setado em AX ou AL com o endereço ES:DI, subtraindo AX com o valor indicado nesse endereço de memória e fazendo a operação +/-2 em DI, caso haja sucesso na comparação o valor da flag zero será 1, ou seja, há zero.
+   
+      SCASB
     
       
    
