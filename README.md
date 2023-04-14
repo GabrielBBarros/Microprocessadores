@@ -250,3 +250,4 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
    
 ### Interrupções
    
+   As interrupções nada mais são do que 
