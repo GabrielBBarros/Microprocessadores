@@ -145,12 +145,46 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
    Uma String corresponde a um elemento de apartir de 8 sté 16 bits, é possível fazer diversas operações.
    
-   Para movimentar uma string podemos entre outros registradores especiais, seja o byte (B) ou a word (W), essa movimentação ocorre de [DS:SI] -> [ES:DI], porem lembre-se que é uma cópia, além que dependendo para paridade pode ser decrementado ou incrementado. Exemplo:
+   Para movimentar uma string grandes podemos entre outros registradores especiais, seja o byte (B) ou a word (W), essa movimentação ocorre de [DS:SI] -> [ES:DI], porem lembre-se que é uma cópia, além que dependendo para paridade pode ser decrementado ou incrementado. Exemplo:
             
        MOVSB
        MOVSW
    
-   Para carregar uma string usamos a função LODS, sendo para byte utilizamos o sulfixo 'B' e para uma word o sulfico 'W', como fizemos no MOVS, o nosso "carregamento" 
+   Para carregar uma string (Endereço de memória -> Registrador)usamos a função LODS, sendo para byte utilizamos o sulfixo 'B' e para uma word o sulfico 'W', como fizemos no MOVS, o nosso "carregamento". Por último lembre-se que SI é incrementado ou decrementado dependendo do flag de de direção (1 para byte e 2 para word).
+   
+      LODSB
+      LODSW
+     
+  Já para salvarmos uma string o movimento é o inverso (Registrador -> endereço de memória), a lógica do 'b' e do 'w' é a mesma, porém o que é incrementado e decrementado é o DI
+  
+      STOSB
+      STOSW
+      
+  O comando 'CLD' faz com que os flags de direção fique setado como zero.
+  
+  Outras funções importantes para os programas em assembly são os laços de repetição. Logo abaixo terá uma tabela no que cada um faz e um exemplo:
+  
+| Função | Descrição | Exemplo |
+| --- | --- | --- |
+| REP | Faz o comando de repetição de string longs, enquanto cx != 0 | REP MOVSW |
+| JZ | É um comando de jump relativo onde só irá fazer o laço se for resultado for 0 | JZ 100 |
+| JNZ | É um comando de jump relativo onde só irá fazer o laço se for resultado for  diferente de 0 | JNZ 100 |
+| JC | É um comando que só irá saltar se o houver carry | JC 100 |
+| JNZ | É o oposto de J, ou seja se não houver carry | JNZ 100 |
+| JB | Mesma coisa do JZ | JB 100 |
+| JMP | É um jump incondicional, ou seja, pulará inpenednete da condição | JMP 100 |
+
+### Sub-Rotina
+
+   Uma sub rotina seria como a chamada de uma função, para acessar ela utilizamos o comando CALL (além disso o Call guarda a instrução seguinte na pilha, para mais tarde), e para voltarmos da função usamos o comando RET na subrotina (volatando imediatamente onde aquela instrução subsequente de Call foi guardada). E por último nesse tópico há duas instruçlões interessantes que são a LOOP, que faz um laço utilizando CALL decrementando CX e o XCHG, que troca os valores de dois registradores.
+   
+    102  CALL 0150
+    ...
+    LOOP 102
+    
+    RET
+    XCHG AX, BX
+
           
    
    
