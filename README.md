@@ -185,6 +185,19 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | JB | Mesma coisa do JZ | JB 100 |
 | JMP | É um jump incondicional, ou seja, pulará inpenednete da condição | JMP 100 |
 
+Existem também alguns saltos utilizando comparações, especialmente essas abaixo ocorrem quando temos números com sinal
+
+| Função | Descrição | Exemplo |
+| --- | --- | --- |
+| JG | Se for maior | JG 120 |
+| JL | Se for menor | JL 120 |
+| JNG | Salta se não maior | JNG 120 |
+| JGE | Sata se maior u igual| JGE 120 |
+| JNLE | Saltar se não menor ou igual | JNLE 120 |
+| JNA | Salta se não maior | JNA 120 |
+| JAE | Salta se maior ou igual | JAE 120 |
+| JNBE | Salta se não for menor ou igual | JNBE 120 |
+
 ### Sub-Rotina
 
    Uma sub rotina seria como a chamada de uma função, para acessar ela utilizamos o comando CALL (além disso o Call guarda a instrução seguinte na pilha, para mais tarde), e para voltarmos da função usamos o comando RET na subrotina (volatando imediatamente onde aquela instrução subsequente de Call foi guardada). Além desses há duas instruçlões interessantes que são a LOOP, que faz um laço utilizando CALL decrementando CX e o XCHG, que troca os valores de dois registradores.
@@ -216,6 +229,24 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    
       SCASB
     
-      
+   CMP
    
+   Faz a comparação de dois registradores, se foram iguais o flag de zero receberá 1, se o primeiro for maior que o segundo o Carry receberá 1, e por último se o primeiro for menor que o segundo o Carry receberá 0.
+   
+      CMP AX, BX
+   
+   NEG
+   
+   Serve para negar um valor, ou seja, invertendo o valor
+   
+      NEG AX
+   
+   TEST
+   
+   Faz um AND entre os valores, porém não guarda o resuldo
+   
+      TEST AX, BX
+   
+   
+### Interrupções
    
