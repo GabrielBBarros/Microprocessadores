@@ -250,4 +250,13 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
    
 ### Interrupções
    
-   As interrupções nada mais são do que 
+   As interrupções nada mais são do que eventos que interrompe o processo natural da máquina, existe vários tipos de interrupções, são elas:
+   
+| Função | Descrição |
+| --- | --- |
+| INT 20 | Termina o programa |
+| INT 21 | Chama diversas funções |
+| INT 25 | Leitura de disco |
+| INT 26 | Escrita de disco |
+| INT 27 | Termina o programa e mantem residente |
+| INT 28 | Aguarda caractere |
