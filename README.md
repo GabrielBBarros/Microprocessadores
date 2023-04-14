@@ -179,8 +179,10 @@ Alguns arquivos de exercicios e teoria de microprocessadores
    Uma sub rotina seria como a chamada de uma função, para acessar ela utilizamos o comando CALL (além disso o Call guarda a instrução seguinte na pilha, para mais tarde), e para voltarmos da função usamos o comando RET na subrotina (volatando imediatamente onde aquela instrução subsequente de Call foi guardada). E por último nesse tópico há duas instruçlões interessantes que são a LOOP, que faz um laço utilizando CALL decrementando CX e o XCHG, que troca os valores de dois registradores.
    
     102  CALL 0150
-    ...
     LOOP 102
+    
+    ...
+    ...
     
     RET
     XCHG AX, BX
