@@ -143,7 +143,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 'Há uma notação importante para se lembrar para se usar mais tarde, para 8 bits os valores de complemento de 2 serão entre -128 até 127 e para 32 bits de -32768 até 32767'
 
-## Overflow vs Carry
+### Overflow vs Carry
 
    Uma dúvida frequente é a diferença se após uma operação o valor gerado virá com carry ou overflow caso houver algum tipo de estouro, ou algo do gênero. 
    O overflow ocorre quando há uma quebra do valor por ser um valor maior que o esperado no registrador, essa sinalização pode ser vista quando em 8 bits sem ser sinalizada o valor passar entre 0 a 255, e em 16 bits de 0 a 65535, além disso podemos ver isso em complemento de 2, como mencionado no tópico acima. 
