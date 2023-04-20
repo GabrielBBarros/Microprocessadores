@@ -177,7 +177,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | --- | --- | --- |
 | REP | Faz o comando de repetição de string longs, enquanto cx != 0 | REP MOVSW |
 | REPE e REPZ | Além de fazer o que o REP faz ele vê se o Carry e o Overflow recebem 0 para encerrar, através das operções SCAS (Compara AX ou AL com o que está em ES:DI) oi CMPS (compara strings através de char, alterandos as flags) | REP MOVSW |
-| REPNE e REPNZ |  | REP MOVSW |
+| REPNE (Dica: pense que esse 'E' e de equivalente) e REPNZ |  | REP MOVSW |
 | JZ | É um comando de jump relativo onde só irá fazer o laço se for resultado for 0 | JZ 100 |
 | JNZ | É um comando de jump relativo onde só irá fazer o laço se for resultado for  diferente de 0 | JNZ 100 |
 | JC | É um comando que só irá saltar se o houver carry | JC 100 |
