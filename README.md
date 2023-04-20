@@ -181,7 +181,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 | JZ | É um comando de jump relativo onde só irá fazer o laço se for resultado for 0 | JZ 100 |
 | JNZ | É um comando de jump relativo onde só irá fazer o laço se for resultado for  diferente de 0 | JNZ 100 |
 | JC | É um comando que só irá saltar se o houver carry | JC 100 |
-| JNZ | É o oposto de J, ou seja se não houver carry | JNZ 100 |
+| JNC | É o oposto de J, ou seja se não houver carry | JNZ 100 |
 | JB | Mesma coisa do JZ | JB 100 |
 | JMP | É um jump incondicional, ou seja, pulará inpenednete da condição | JMP 100 |
 
