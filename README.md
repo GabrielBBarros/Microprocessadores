@@ -193,10 +193,10 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 | JL | Se for menor | JL 120 |
 | JNG | Salta se não maior | JNG 120 |
 | JGE | Salta se maior u igual| JGE 120 |
-| JNLE | Saltar se não menor ou igual | JNLE 120 |
+| JNLE | Saltar se não menor ou igual (com sinal) | JNLE 120 |
 | JNA | Salta se não maior | JNA 120 |
 | JAE | Salta se maior ou igual | JAE 120 |
-| JNBE | Salta se não for menor ou igual | JNBE 120 |
+| JNBE | Salta se não for menor ou igual (sem sinal) | JNBE 120 |
 
 ### Sub-Rotina
 
