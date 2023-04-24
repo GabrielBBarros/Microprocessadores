@@ -192,7 +192,7 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 | JG | Se for maior | JG 120 |
 | JL | Se for menor | JL 120 |
 | JNG | Salta se não maior | JNG 120 |
-| JGE | Sata se maior u igual| JGE 120 |
+| JGE | Salta se maior u igual| JGE 120 |
 | JNLE | Saltar se não menor ou igual | JNLE 120 |
 | JNA | Salta se não maior | JNA 120 |
 | JAE | Salta se maior ou igual | JAE 120 |
