@@ -1,0 +1,36 @@
+1) O que determina se um microprocessador é considerado um dispositivo de
+8, 16 ou 32 bits ?
+
+Resposta: O que determina isso é o barramento de dados do processador.
+
+2) Quantas linhas de endereço tem o 8088 ? Quantas posições de memória
+este número de linhas de endereço permite ao 8088 acessar diretamente ?
+O 8088 pode trabalhar com 4 segmentos de memória ? Quantas posições
+tem em cada segmento, e qual o tamanho de cada posição ? Qual a
+principal diferença entre o 8088 e o 8086 ?
+
+Resposta: 20 linhas. 2^20 = 1048576. Sim, com até 4 segmentos. 8 bits com tamanho de 64 kb. A diferença está no barramento
+enquanto no 8088 temos dois barramentos de 8 o 8086 tem um de 16, ou seja o 8086 é mais rápido e o 8088 é mais lento.
+
+3) Descreva a função da fila de instruções da CPU, e como ela pode acelerar
+a velocidade de processamento ?
+
+Resposta: Uma fila armazena temporariamente instruções que aguardam para ser executadas, através dela usando saltos e execuções
+paralela, torna o processo mais eficiente.
+
+4) Se o segmento de código começa em 50A00h, qual o número contido no
+registrador CS ? Considerando esta base para o segmento de código, qual
+o endereço físico de uma instrução, buscada a partir do ponteiro de
+instrução contendo 758Bh ?
+
+CS = 50A0. => (CS*10) + IP => 50A00+758B=51128
+
+5) Calcule os endereços físicos representados por:
+  a)784F:AB67 => 784F0+AB67 = 83057
+  b)B034:7CA8 => B0340+7CA8 = B7FE8
+  c)12AB:5A0F => 12AB0+5A0F = 184BF
+
+6) Qual a vantagem de usar um registrador da CPU para armazenar
+temporariamente dados, em relação ao uso da memória ?
+
+Resposta: Maior escalabilidade, flexibilidade e volicidade.
