@@ -1,0 +1,19 @@
+1) 
+
+MOV AL, 4
+CALL 200
+INT 20
+
+MOV CX, AX
+MOV DX, 0
+->DEC CX
+MUL CX
+<-LOOP
+RET
+
+
+
+2)
+
+
+3)
