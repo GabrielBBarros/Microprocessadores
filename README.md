@@ -31,7 +31,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
 ### Como começo?
    
-   Para facilitar escreve apenas assim nos primeiros comando do debug
+   Para facilitar escreve apenas assim nos primeiros comando do debug.
         
       debug
       a 100
