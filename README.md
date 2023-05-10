@@ -12,6 +12,17 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 
    Nesa parte trabalharemos com processadores da Intel 8088 e 8086, a grande diferença de um e outro se encontra no seu barramente (onde se manioula os dados), onde o 8088 possui apenas dois barramentos de 8 bits e o 8086 possui um de 16 bits, nesse caso o 8086 precisa apenas de uma operação para manipular dados de 16 bits, enquanto o 8088 precisa de duas. Aqui utilizaremos a plataforma DosBox para fazer os nossos códigos.
    
+## Arquitetura RISC X CISC
+   
+   A arquitetura do tipo CISC tem a caracterisitca de duas instruções serem mais complexas. Já as RISC possui instruções mais simples e eleas são mais eficientes eme energia e velocidade.
+  
+##Endereço Físico
+
+   Para calcular o endereço físico precisamos saber de duas coisas, a primeira delas é que estamos sempre mexendo com o IP e dependendo do exercício com CS ou outro comando que é dado, geralmente usamos CS se queremos calcular o endereço físico da próxima instrução. A formulá se dá como:
+   
+         CS *10 + IP
+         
+  Lembrando que todos esses números são do conjunto hexadecimal.
    
 ### Principais comandos
    
