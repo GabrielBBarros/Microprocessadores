@@ -33,4 +33,4 @@ CS = 50A0. => (CS*10) + IP => 50A00+758B=51128
 6) Qual a vantagem de usar um registrador da CPU para armazenar
 temporariamente dados, em relação ao uso da memória ?
 
-Resposta: Maior escalabilidade, flexibilidade e volicidade.
+Resposta: Maior escalabilidade, flexibilidade e velocidade.
