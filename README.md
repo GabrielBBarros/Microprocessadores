@@ -277,7 +277,7 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 
    Em teoria, o segmento serve como uma parte do endereço físico que serve como ponteiro para uma região da memória, já o deslocamento, é um tipo de distancia entre o início da região da memória apontada pelo segmento até o endereço desejado. Num exercício quando executamos o comando INT 5, por exemplo devemos percorrer a tabela dada em quatro em quatro (lembrando que cada "céçula é composto por um par de números). Vamos supor que você chegou no seguinte estado, por exemplo: 
    
-      -> extado inicial = AB 00 98 00
+      -> estado inicial = AB 00 98 00
       -> segundo passo (inverte a ordem totalmente): = 00 89 00 BA
    
  Basicmanete você inverterá tudo, o segmento é 00 89 e o deslocamento 00 BA.
