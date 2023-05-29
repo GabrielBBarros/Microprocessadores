@@ -335,6 +335,7 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 | je | Salta se st>st(1) ou st=0|
 
 
- 
-   
+ ### SIMD
+  
+   É uma extensão do HTML, faz com que os programas executem uma operação em multiplos pedaçoes em paralelo, apenas podem ser executadas com a extensão SSE, ela pode trabalhar com ponto flutuante e inteiros.
          
