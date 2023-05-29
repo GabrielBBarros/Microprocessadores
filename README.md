@@ -282,6 +282,8 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
    
  Basicmanete você inverterá mas sem inverter o par.
    
-   
+  
+  
+ ##FPU
    
          
