@@ -322,6 +322,18 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 | f2xm1| 2^st  - 1|
 
 
+### Operações de comparação e salto
+
+| Função | Descrição |
+| --- | --- |
+| fcom | compara st com st(1) |
+| fcom st(2) | compara st com st(2) |
+| fcom x| compara st com x |
+| ftst| compara o topo com 0|
+| ja | Salta de st>st(1) ou st>0|
+| jb | Salta de st<st(1) ou st<0|
+| je | Salta de st>st(1) ou st=0|
+
 
  
    
