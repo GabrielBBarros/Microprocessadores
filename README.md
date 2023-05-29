@@ -280,10 +280,49 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
       -> estado inicial = AB 00 98 00
       -> segundo passo = 00 98 00 AB
    
- Basicmanete você inverterá mas sem inverter o par.
+ Basicamente você inverterá mas sem inverter o par.
    
   
   
- ##FPU
+ ## FPU
+   A FPU surgiu pr conta da necessidade de clacular ponto flutuante, uma vez que processadores da familia 8086/8088 apenas trabalhavam com o conjunto dos numeros inteiros, FPU é um coprocessador mais rápido que o processador para esse requisito. A representação de ponto flutuante foi padronizada pelo padrão IEEE-754 (1 bit de sinal, x bits para expoente e y bits para o digito de valor).
+   A FPU trabalha com pilha, por isso é importante estudar essa estrutura de dados antes de adentrar dentro desse processo de ponto flutuante, mas basicamente um pilha é uma ED que segue o padrão FILO (First in last Out), um exemplo de pilha é a pilha de ivros, onde nós colocamos um em cima do outro, se quiremos tirar o primeiro livro empilhado, temos que retirar todos os outros antes.
+   
+### Operações 
+
+| Função | Descrição |
+| --- | --- |
+| fabs | módulo do topo da pilha |
+| fadd | Soma dos dois primeiro elementos do topo, armazenando em um só 'bloco' "(y+x)"|
+| fadd st(2), st| Soma o elemento 2 da pilha com o topo, colocando o resultado onnde estava o elemento 2 |
+| fadd st(2) | Soma o segundo elemento com o topo, armazenando no topo |
+| fadd x | Soma x ao topo |
+| fchs | Troca sinal do topo |
+| fsub | Subtração |
+| fdiv | Divisão |
+| fmul | Multiplicação |
+| divr | Divisão invertida (x/y) |
+| subr | Subtração invertida (x-y) |
+| subp | Remove o topo após a operação |
+| fld 1 | Carrega 1 |
+| fldpi | Carrega pi |
+| fldz | Carrega 0 |
+| fld st | Copia o topo no topo |
+| fld st(2) | Copia st(2) no topo |
+| fld x| Copia x no topo |
+| fsin | Calcula seno |
+| fcos | Calcula cosseno |
+| fsincos | Calcula senno-cosseno |
+| fxch | Alterna os dois valores do topo |
+| fxch st(2) | Alterna os dois valores em especifico e o topo |
+| fsqrt | Calcula raiz quadrada |
+| fst | Salva topo |
+| fstp | Salva o topo e depois remove |
+| fyl2x | faz st(1)*log2(st) |
+| f2xm1| 2^st  - 1|
+
+
+
+ 
    
          
