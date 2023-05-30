@@ -5,7 +5,7 @@ Alguns arquivos de exercicios e teoria de microprocessadores
 # Teoria
 
 
-## Entendimento básico e operações
+## Primeira Parte
 
 
 ### Processadores e plataforma
@@ -282,7 +282,7 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
    
  Basicamente você inverterá mas sem inverter o par.
    
-  ## Segundo Semestre
+  ## Segunda Parte
   
  ### FPU
    A FPU surgiu pr conta da necessidade de clacular ponto flutuante, uma vez que processadores da familia 8086/8088 apenas trabalhavam com o conjunto dos numeros inteiros, FPU é um coprocessador mais rápido que o processador para esse requisito. A representação de ponto flutuante foi padronizada pelo padrão IEEE-754 (1 bit de sinal, x bits para expoente e y bits para o digito de valor).
