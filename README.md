@@ -330,6 +330,7 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 | fcom st(2) | compara st com st(2) |
 | fcom x| compara st com x |
 | ftst| compara o topo com 0|
+| ftst| compara o topo com 0|
 | ja | Salta se st>st(1) ou st>0|
 | jb | Salta se st<st(1) ou st<0|
 | je | Salta se st>st(1) ou st=0|
@@ -337,5 +338,10 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 
  ### SIMD
   
-   É uma extensão do HTML, faz com que os programas executem uma operação em multiplos pedaçoes em paralelo, apenas podem ser executadas com a extensão SSE, ela pode trabalhar com ponto flutuante e inteiros.
+   É uma extensão do HTML, faz com que os programas executem uma operação em multiplos pedaçoes em paralelo, apenas podem ser executadas com a extensão SSE, ela pode trabalhar com ponto flutuante e inteiros além de trabalhar com oito registradores com 128 bits cada (xmm0 - xmm7).
+
          
+| Função | Descrição | Sulfixo
+| --- | --- | --- |
+| Acumuladas |Operação em todos os quatro blocos, salvo na primeira linha de blocos | PS |
+| Escalares |Operação apenas em um bloco, o restante fica como estava antes, sem alteração | SS |
