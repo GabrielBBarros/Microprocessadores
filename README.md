@@ -282,9 +282,9 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
    
  Basicamente você inverterá mas sem inverter o par.
    
+  ## Segundo Semestre
   
-  
- ## FPU
+ ### FPU
    A FPU surgiu pr conta da necessidade de clacular ponto flutuante, uma vez que processadores da familia 8086/8088 apenas trabalhavam com o conjunto dos numeros inteiros, FPU é um coprocessador mais rápido que o processador para esse requisito. A representação de ponto flutuante foi padronizada pelo padrão IEEE-754 (1 bit de sinal, x bits para expoente e y bits para o digito de valor).
    A FPU trabalha com pilha, por isso é importante estudar essa estrutura de dados antes de adentrar dentro desse processo de ponto flutuante, mas basicamente um pilha é uma ED que segue o padrão FILO (First in last Out), um exemplo de pilha é a pilha de ivros, onde nós colocamos um em cima do outro, se quiremos tirar o primeiro livro empilhado, temos que retirar todos os outros antes.
    
@@ -338,10 +338,87 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 
  ### SIMD
   
-   É uma extensão do HTML, faz com que os programas executem uma operação em multiplos pedaçoes em paralelo, apenas podem ser executadas com a extensão SSE, ela pode trabalhar com ponto flutuante e inteiros além de trabalhar com oito registradores com 128 bits cada (xmm0 - xmm7).
+   É uma extensão do HTML, faz com que os programas executem uma operação em multiplos pedaçoes em paralelo, apenas podem ser executadas com a extensão SSE (Ela foi extendida até o SSE3), ela pode trabalhar com ponto flutuante e inteiros além de trabalhar com oito registradores com 128 bits cada (xmm0 - xmm7). Aqui temos dois tipos de operações:
 
          
 | Função | Descrição | Sulfixo
 | --- | --- | --- |
 | Acumuladas |Operação em todos os quatro blocos, salvo na primeira linha de blocos | PS |
 | Escalares |Operação apenas em um bloco, o restante fica como estava antes, sem alteração | SS |
+
+As operações artiméticas possíveis de serem feitas são as básicas: Soma, subtração, divisão e multiplicação. Por exemplo para som usamos: ADDPS (para acumulada) e ADDSS (para escalares), e assim por diante, lembra muito o assembly do 8086/8088. Segue a seguir uma tabela contendo elas: 
+
+| Função | Descrição |
+| --- | --- |
+| ADDPS | Soma acumulada |
+| ADDSS | Soma escalar |
+| SUBPS | Subtração acumulada |
+| SUBSS | Subtração escalar |
+| MULPS | Multiplicação acumulada |
+| MULSS | Multiplicação escalar |
+| DIVPS | Divisão acumulada |
+| DIVSS | Divisão escalar |
+| SQRTPS | Raiz acumulada -> xmm1 = sqrt(xmm2) |
+| SQRTSS | Raiz escalar -> xmm1 = sqrt(xmm2)|
+| MOVAPS | Move um conjunto de 4 dados (ponto-flutuante) com
+endereços de 16 bits alinhados |
+| MOVHPS | Move um conjunto de 2 dados (ponto-flutuante) com
+endereços de 16 bits para os bits mais altos |
+| MOVUPS | Move um conjunto de 4 dados (ponto-flutuante) com
+endereços de 16 bits não alinhados |
+| MOVLPS | Move um conjunto de 2 dados (ponto-flutuante) com
+endereços de 16 bits para os bits mais baixos |
+| MOVLSS | Move um dado (ponto-flutuante) com
+endereços de 16 bits para o byte menos
+significativo |
+
+As instruções de movimentação de dados podem
+movimentar dados:
+• Da memória para um registrador XMM
+• De um registrador XMM para a memória
+• De um registrador XMM para outro registrador XMM
+
+### RISC x CISC
+
+RISC : É uma máquina com instruções simples e com tamanho fixo, elas são projetadas para serem rodadas em um unico ciclo de clock, possui menor consumo de energia, se adequa aos pipelines (onde cada instrução são executados simultaneamente em estágios distintos), além disso ela pode ter problemas como precisar de mais intruções necessárias e tem menor flexibilidade.
+
+CISC: Possui intruções mais compexas e variaveis, possui maior conjunto de endereços, possui maior consumo de energia e flexibilidade.
+
+
+### Von Neumann x Harvard
+
+Von Neumann: Nessa arquitetura os dados e as intruções são armazenados na mesma memória (Principal ou RAM), mais usadas nos computadores modernos. As intruções e os dados são buscados da memória e transferidos para a CPU através do barramento de dados.
+
+Harvard: Nessa arquiteura há uma memória para a instrução e outra para dados, dessa forma a CPU pode buscar por um dado ou instrução simultaneamente, ela geralmente usado em dispositivos embarcados, possui maior complexidade de implementação.
+
+
+### Pipelines
+
+É um tipo de técnica de aceleração de processos inicialmente associado ao RISC, onde basicamente você pode executar várias intruções "ao mesmo tempo" porém em estágios diferentes (Um processo não precisa ser terminado para começar outro)
+
+![400px-Fivestagespipeline](https://github.com/GabrielBBarros/Microprocessadores/assets/92558878/41e4576b-be8b-4839-bf0f-55fcb6159490)
+
+
+### 3 Causas da Degradação de Pipeline
+
+| Tipo | Descrição |
+| --- | --- |
+| Dependência de Recurso |Acesso a memória(nas buscas tem conflito da utilização da memória e do barramento), Unidade de execução (conflito no uso da ULA). Para sua resolução geralmente se usa duplicação de recursos e uso de mamória cache sob arquiterura Harvard, com separação do cache e dos dois barramentos (instrução e dados).|
+| Dependência de Controle |Problema com instrução de desvio, Interlock, Buffers de Intrução. Irá ser melhor explicado no trabalho|
+| Dependência de Dados |Ocorre quando a intrução pede operandos de outra, existem três tipos (Dependencia de fluxo de dados, antidependencia, dependencia de saida)|
+
+Dependencia de fluxo(o operando de uma instrução precisa depende do resultado da operação anterior, pode gerar bolhas de pipeline):
+
+      ADD R3, R2, R1       R3 = R2+R1
+      SUB R4, R3, R1       R4 = R3-R1
+
+Antidependencia(Basicamente é uma atualização de uma variavel pos uma operação feita com ela):
+
+      ADD R3,R2,R1         R3=R2+R1
+      SUB R2,R4,R1         R2=R4-R1
+      
+Dependência de saída (Duas instruções atualizam a mesma variavel):
+
+      ADD R3,R2,R1         R3=R2+R1
+      SUB R2,R3,R1         R2=R3-R1
+      ADD R3,R2,R5         R3=R2+R5
