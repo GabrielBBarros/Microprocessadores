@@ -422,3 +422,37 @@ Dependência de saída (Duas instruções atualizam a mesma variavel):
       ADD R3,R2,R1         R3=R2+R1
       SUB R2,R3,R1         R2=R3-R1
       ADD R3,R2,R5         R3=R2+R5
+      
+      
+### Critérios da de classificação de Flynn
+
+Usado em sistemas paraelos esse critério observa o número de de fluxos de intruções e dados processados simultaneamente.
+
+| Tipo | Descrição |
+| --- | --- |
+| SISD | Máquinas simples, um único processador executa uma única instrução em um único conjunto de dados por vez.|
+| SIMD | Um único conjunto de instruções é executado simultaneamente em múltiplos conjuntos de dados.|
+| MIMD | Processamento com diversas instruções operando simultaneamente sobre dados distintos. Multiprocessadores(Memória global compartilhada) e Multicomputadores (memória local distribuida).|
+| MISD | Multiplas instruções executa um único conjunto de dados (computadores tolerantes a falhas é o mais perto).|
+
+
+### Alguns conceitos importantes
+
+Pipelines em processadores Multithreads: Processadores multithreaded operam com instruções de diversos processos simultaneamente;
+
+Pipelines Aritméticos: Usados para executar operações aritméticas complexas, sua vantagem é a simplificação do circuito.
+
+Processamento Paralelo: Processamento paralelo é usado para reduzir o tempo total de processamento de aplicações com grande demanda
+
+Condições de paralelismo: Precisa ter independência entre as intruções em paralelo.
+
+Granularidade: Medida da quantidade de computação envolvida em cada etapa do processamento paralelo.
+
+Latência de comunicação: Comunicação entre os resultados entre grãos de processamento.
+
+Escalonamento: escalonar os processos.
+
+WatchDog: É um componente de hardware ou software que monitora o funcionamento de um sistema computacional. Ele utiliza um temporizador que precisa ser periodicamente rearmado pelo sistema em funcionamento. Se ocorrer uma falha ou travamento que impeça o rearmamento, o temporizador expira e aciona um mecanismo de reinicialização automática do sistema. Essa funcionalidade é importante para garantir a estabilidade e a disponibilidade contínua do sistema, reiniciando-o em um estado conhecido e evitando períodos prolongados de inatividade.
+
+
+
