@@ -436,6 +436,10 @@ Usado em sistemas paraelos esse critério observa o número de de fluxos de intr
 
 ### Alguns conceitos importantes
 
+Hardwired: Implementado em circuitos lógicos dedicados (usando portas logicas), ela é fixa e não programavel, ela é eficiente e rápida, devido as suas instruções serem executados diretamente no circuito de controle, mas vale lembrar que ela é dificil de se modificar pois qualquer alteração precisa de alteração no hardware.
+
+Microprogramada: Sendo muito flexivel seu comportamento é dedicado a microinstruções inscritas na memoria ROM, ela é mais lenta pois requer um decodificação de microinstruções.
+
 Pipelines em processadores Multithreads: Processadores multithreaded operam com instruções de diversos processos simultaneamente;
 
 Pipelines Aritméticos: Usados para executar operações aritméticas complexas, sua vantagem é a simplificação do circuito.
