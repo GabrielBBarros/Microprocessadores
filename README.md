@@ -336,7 +336,7 @@ Existem também alguns saltos utilizando comparações, especialmente essas abai
 
  ### SIMD
   
-   É uma extensão do HTML, faz com que os programas executem uma operação em multiplos pedaçoes em paralelo, apenas podem ser executadas com a extensão SSE (Ela foi extendida até o SSE3), ela pode trabalhar com ponto flutuante e inteiros além de trabalhar com oito registradores com 128 bits cada (xmm0 - xmm7). Aqui temos dois tipos de operações:
+   É uma extensão, faz com que os programas executem uma operação em multiplos pedaçoes em paralelo, apenas podem ser executadas com a extensão SSE (Ela foi extendida até o SSE3), ela pode trabalhar com ponto flutuante e inteiros além de trabalhar com oito registradores com 128 bits cada (xmm0 - xmm7). Aqui temos dois tipos de operações:
 
          
 | Função | Descrição | Sulfixo
